@@ -1,5 +1,3 @@
-# Vision Code
-
 # Purpose
 This program tracks a relatively large object with a pattern of yellow, blue, and yellow, stuck closely together.
 
@@ -14,10 +12,10 @@ Both make use of the opencv library, so be sure that is installed and over versi
 
 The camera used will be the default one, and if you wish to change that, on the line:
 
-#C++
+# C++
 VideoCapture cap(0);
 
-#Python
+# Python
 cam = cv2.VideoCapture(0)
 
 Change the (0) to another number, and the code will use a camera of lower priority or order.
@@ -34,10 +32,10 @@ which will start the code and open a viewing window that will show the object tr
 
 To disable the visual display, comment out:
 
-#C++
+# C++
 imshow("frame", im_with_keypoints);
 
-#Python
+# Python
 cv2.imshow('frame',im_with_keypoints)
 
 and
